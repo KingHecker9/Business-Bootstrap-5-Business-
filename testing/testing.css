@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center; /* Align the items (image and text) vertically */
+    justify-content: space-between; /* Space out the image and text */
+    background: linear-gradient(to right, #1c3b57, #3c75a0); /* Dark blue to blue background */
+    padding: 20px;
+    border-radius: 10px; /* Optional: rounded corners for the container */
+  }
+  
+  .image-container {
+    width: 60px; /* Size of the circular image */
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%; /* This makes the image round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .round-image {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Crop the image to fit the container if necessary */
+  }
+  
+  .text-container {
+    flex-grow: 1; /* Allow the text container to grow and take remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White text color */
+    font-size: 18px; /* Text size */
+  }
+  
+  p {
+    margin: 0;
+  }
+  
